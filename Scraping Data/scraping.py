@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-url = 'https://www.tokopedia.com/search?st=product&q=hijab'
+url = 'https://www.tokopedia.com/search?st=product&q=macbook'
 driver = webdriver.Chrome()
 driver.get(url)
 time.sleep(3)
@@ -40,7 +40,7 @@ for i in range(5):
      print (df)
      
 
-     df.to_csv('datascrapinghijab.csv', index = False)
+     df.to_csv('datascraping.csv', index = False)
      print('Data Telah Tersimpan')            
 
 driver.close()
